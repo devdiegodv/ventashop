@@ -1,0 +1,94 @@
+/* Establece el tamaño base de la fuente en 62.5% para facilitar los cálculos de rem */
+html {
+    font-size: 62.5%;
+}
+
+/* Configuración general del cuerpo del documento */
+body {
+    background-color: #f5f3f3; /* Color de fondo del cuerpo */
+}
+
+/* Estilos para encabezados */
+h1 {
+    text-align: center; /* Centra el texto */
+}
+
+h2 {
+    font-size: 3rem; /* Tamaño de fuente */
+}
+
+h4 {
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 700; /* Grosor de la fuente */
+}
+
+/* Estilos para el encabezado */
+header {
+    padding: 20px 0 0 0; /* Espaciado interno */
+    background: white; /* Fondo blanco */
+    text-align: center; /* Centra el texto */
+}
+
+/* Elimina los marcadores de lista */
+ul {
+    list-style: none;
+}
+
+/* Estilos para la lista de camisas */
+#shirts-list .row {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las tarjetas de los productos */
+.card {
+    text-align: center; /* Centra el contenido */
+    border: 1px solid #e1e1e1; /* Borde sólido */
+    background: white; /* Fondo blanco */
+}
+
+.image-item {
+    width: 100%; /* Para asegurar que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Puedes ajustar este valor según tus preferencias */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste dentro del contenedor sin distorsionarse */
+}
+
+/* Estilos para la información de la tarjeta */
+.info-card {
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilos para párrafos dentro de .info-card y encabezados h4 dentro de .card */
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilos para el precio tachado */
+.info-card .price {
+    text-decoration: line-through; /* Tachado del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos para el precio en negrita */
+.info-card .price span {
+    font-weight: 700; /* Grosor de la fuente */
+    font-size: 22px; /* Tamaño de fuente */
+}
+
+
+/* Estilos específicos para pantallas grandes */
+@media (min-width: 750px) {
+    header {
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+}
+
+/* Estilos específicos para pantallas medianas */
+@media (min-width: 550px) {
+    .card {
+        text-align: left; /* Alinea el contenido a la izquierda */
+    }
+}
+
+
