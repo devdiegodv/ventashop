@@ -34,6 +34,29 @@ ul {
     list-style: none;
 }
 
+/* Establece la posición relativa para todos los elementos con la clase "submenu" */
+.submenu {
+    position: relative;
+}
+
+/* Oculta inicialmente el elemento con el id "cart" dentro de los elementos con la clase "submenu" */
+.submenu #cart {
+    display: none;
+}
+
+/* Cuando se pasa el cursor sobre un elemento con la clase "submenu", muestra el elemento con el id "cart" */
+.submenu:hover #cart {
+    display: block; /* Hace visible el elemento */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 0; /* Alinea el elemento a la derecha */
+    top: 100%; /* Desplaza el elemento hacia abajo respecto al elemento padre */
+    z-index: 1; /* Asegura que el elemento se superponga a otros elementos */
+    background-color: white; /* Establece el color de fondo del elemento */
+    padding: 20px; /* Agrega espacio interno al elemento */
+    min-height: 400px; /* Establece la altura mínima del elemento */
+    min-width: 300px; /* Establece el ancho mínimo del elemento */
+}
+
 /* Estilos para la lista de camisas */
 #shirts-list .row {
     margin-bottom: 20px; /* Margen inferior */

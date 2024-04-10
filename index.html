@@ -10,16 +10,57 @@
     <link rel="stylesheet" href="assets/css/skeleton.css">
 </head>
 <body>
-    <div id="lista-cursos" class="container">
-        <h1 id="encabezado" class="encabezado">Poleras Reacondicionadas</h1>
+    <header id="header" class="header">
+        <!-- Contenedor principal del encabezado -->
+        <div class="container">
+            <!-- Fila dentro del contenedor -->
+            <div class="row">
+                <div class="four columns">
+                    <img src="assets/img/logo.png" id="logo">
+                </div>
+                <!-- Columna de dos unidades, alineada a la derecha -->
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="assets/img/cart.png" id="img-cart">
+                            <div id="cart">
+                                <table id="list-cart" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="empty-cart" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!-- Contenedor principal de la página -->
+    <div id="shirts-list" class="container">
+        <!-- Encabezado principal -->
+        <h1 id="header-2" class="header-2">Poleras Reacondicionadas</h1>
+        <!-- Sección de filas de productos -->
         <div class="row">
+            <!-- Columna de cuatro unidades -->
             <div class="four columns">
+                <!-- Tarjeta de producto -->
                 <div class="card">
+                    <!-- Imagen del producto -->
                     <img src="assets/img/jordan.jpg" class="image-item u-full-width">
+                     <!-- Información del producto -->
                     <div class="info-card">
                         <h4>Jordan</h4>
                         <p>Falabella</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="1">Agregar Al Carrito</a>
                     </div>
@@ -31,7 +72,7 @@
                     <div class="info-card">
                         <h4>Nike</h4>
                         <p>Paris</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="2">Agregar Al Carrito</a>
                     </div>
@@ -43,7 +84,7 @@
                     <div class="info-card">
                         <h4>Armani Exchange</h4>
                         <p>Hites</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="3">Agregar Al Carrito</a>
                     </div>
@@ -58,7 +99,7 @@
                     <div class="info-card">
                         <h4>Lacoste</h4>
                         <p>H&M</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="4">Agregar Al Carrito</a>
                     </div>
@@ -70,7 +111,7 @@
                     <div class="info-card">
                         <h4>Calvin Klein</h4>
                         <p>Corona</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="5">Agregar Al Carrito</a>
                     </div>
@@ -82,7 +123,7 @@
                     <div class="info-card">
                         <h4>Tommy Hilfiger</h4>
                         <p>Ripley</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="6">Agregar Al Carrito</a>
                     </div>
@@ -96,7 +137,7 @@
                     <div class="info-card">
                         <h4>Adidas</h4>
                         <p>Linio</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="7">Agregar Al Carrito</a>
                     </div>
@@ -108,7 +149,7 @@
                     <div class="info-card">
                         <h4>Philipp Plein</h4>
                         <p>Tricot</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="10">Agregar Al Carrito</a>
                     </div>
@@ -120,7 +161,7 @@
                     <div class="info-card">
                         <h4>Gucci</h4>
                         <p>Johnson</p>
-                        <img src="assets/img/estrellas.png">
+                        <img src="assets/img/stairs.png">
                         <p class="price">$200  <span class="u-pull-right ">$15</span></p>
                         <a href="#" class="u-full-width button-primary button input" data-id="9">Agregar Al Carrito</a>
                     </div>
@@ -129,7 +170,7 @@
         </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
